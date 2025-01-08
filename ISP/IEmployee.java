@@ -1,3 +1,0 @@
-interface IEmployee {
-    void salary();
-}
