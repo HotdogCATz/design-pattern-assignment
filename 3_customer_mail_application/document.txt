@@ -1,0 +1,11 @@
+Design Patterns ที่ใช้ "Factory Method"
+
+CustomerMailFactory สร้าง object ของ Customer (Regular, Mountain, Delinquent) โดยที่ client (Main Program) ไม่ต้องรู้จัก Concrete Class
+การเพิ่มประเภทของ Customer ในอนาคตเพียงเพิ่มคลาสใหม่และปรับ Factory
+
+Customer ที่เป็น abstract มี interface ของ createMail และ createBrochure ซึ่งบังคับให้ทุก subclass ต้อง implement
+
+และยังใช้ Single Responsibility Principle (SRP) เพื่อให้แต่ละคลาสมีหน้าที่ชัดเจน
+- CustomerMailApplication จัดการการติดต่อกับลูกค้า
+- CustomerMailFactory สร้าง object ของลูกค้า
+- Customer และ subclass จัดการเนื้อหาเฉพาะของลูกค้าแต่ละประเภท
