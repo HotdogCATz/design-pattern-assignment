@@ -1,9 +1,10 @@
-package q1;
-
 public class App {
     public static void main(String[] args) {
-        ImageManager manager = new ImageManager();
-        manager.setRenderer(new SmartphoneRenderer());
-        manager.show();
+        IImage myImage = new Image("test.jpg");
+        // Do something else
+        System.out.println("Image created but not loaded yet.");
+        
+        // Load and display the image only when needed
+        myImage.display();        
     }
 }
