@@ -1,10 +1,13 @@
+package q1;
+
 public class App {
     public static void main(String[] args) {
-        IImage myImage = new Image("test.jpg");
-        // Do something else
-        System.out.println("Image created but not loaded yet.");
+        Game football = new Football();
+        football.play();
         
-        // Load and display the image only when needed
-        myImage.display();        
+        System.out.println();
+        
+        Game basketball = new Basketball();
+        basketball.play();
     }
 }
